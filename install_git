@@ -1,0 +1,15 @@
+echo "Installing git =>"
+
+mkdir -p ~/src
+cd ~/src
+
+curl -O http://kernel.org/pub/software/scm/git/git-1.6.4.2.tar.bz2
+
+tar xzvf git-1.6.4.2.tar.bz2
+cd git-1.6.4.2
+./configure --prefix=/usr/local
+make
+sudo make install
+cd ..
+
+echo "git installed"

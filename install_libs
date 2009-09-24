@@ -1,0 +1,7 @@
+echo "Installing libs =>"
+
+brew install libevent
+brew install memcached
+
+echo "Done"
+

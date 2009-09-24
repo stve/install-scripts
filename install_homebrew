@@ -1,0 +1,10 @@
+echo "Installing homebrew"
+
+sudo chown -R `whoami`:staff /usr/local
+
+cd ~/src
+git clone git://github.com/mxcl/homebrew.git
+
+cp -fR homebrew/* /usr/local/
+
+echo "homebrew installed"
