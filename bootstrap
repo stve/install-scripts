@@ -1,0 +1,21 @@
+echo "Let's get this party started"
+
+sudo rm -rf /usr/local
+
+# install brew and git
+./homebrew_install.rb
+
+# use brew to install a bunch of libs
+./install_libs
+
+# setup mysql to boot on launch
+cd ~/src
+curl -O http://hivelogic.com/downloads/com.mysql.mysqld.plist
+sudo mv ~/src/com.mysql.mysqld.plist /Library/LaunchDaemons
+sudo chown root /Library/LaunchDaemons/com.mysql.mysqld.plist
+sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysqld.plist
+
+# install ruby rvm
+./install_ruby_rvm
+
+echo "All set"

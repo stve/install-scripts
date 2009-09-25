@@ -1,7 +1,19 @@
-echo "Installing libs =>"
+echo "Installing libs with brew =>"
 
+# memcached
 brew install libevent
 brew install memcached
+
+# databases
+brew install sqlite
+brew install mysql
+brew install sphinx
+
+# amazon ec2
+# brew install ec2-api-tools
+
+# graphics
+brew install imagemagick
 
 echo "Done"
 
