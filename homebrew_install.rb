@@ -30,12 +30,12 @@ fail! unless system("brew install git")
 puts "* Connecting homebrew installation to masterbrew on Github"
 if system("git clone #{REPOSITORY_URL}")
   FileUtils.mv('homebrew/.git', '/usr/local/.git')
-  system("cd /usr/local && git pull origin master")
+  system("cd /usr/local && git pull")
 else
   fail! "Couldn't clone git repository"
 end
  
 # quick cleanup
 system("sudo rm -rf /tmp/homebrew*")
- 
-puts "* Done. Run 'cd /usr/local && git pull origin master' to update formulae."
+
+puts "* Done. Run 'cd /usr/local && git pull' to update formulae."

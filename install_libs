@@ -9,8 +9,11 @@ brew install sqlite
 brew install mysql
 brew install sphinx
 
+# setup mysql to boot on launch
+launchctl load -w /usr/local/Cellar/mysql/5.1.38/com.mysql.mysqld.plist
+
 # amazon ec2
-# brew install ec2-api-tools
+brew install ec2-api-tools
 
 # graphics
 brew install imagemagick
