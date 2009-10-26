@@ -1,0 +1,6 @@
+curl -L http://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C /usr/local
+
+cd /usr/local
+git init
+git remote add origin git://github.com/mxcl/homebrew.git
+git pull origin master
