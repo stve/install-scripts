@@ -16,8 +16,8 @@ mv MissingDrawer20061108 ~/Library/Application\ Support/TextMate/PlugIns/
 
 # install the Argonaut theme
 # TODO: tmthemes.com is down while i'm trying to write this
-# curl -O http://tmthemes.com/    [ Argonaut ].tmTheme
-# mv [ Argonaut ].tmTheme ~/Library/Application\ Support/TextMate/Themes/
+# curl http://www.tmthemes.com/download/Argonaut/ >> Argonaut.tmTheme
+# mv Argonaut.tmTheme ~/Library/Application\ Support/TextMate/Themes/
 
 
 # cleanup
