@@ -1,0 +1,26 @@
+# setup tmp dir
+
+mkdir -p /tmp/textmate
+cd /tmp/textmate
+
+# setup TextMate dirs
+
+mkdir -p ~/Library/Application Support/TextMate/Themess/
+mkdir -p ~/Library/Application Support/TextMate/PlugIns/
+
+# install the Missing Drawer Plugin
+
+curl -O http://hetima.com/textmate/MissingDrawer20061108.zip
+unzip MissingDrawer20061108.zip
+mv MissingDrawer20061108 ~/Library/Application\ Support/TextMate/PlugIns/
+
+# install the Argonaut theme
+# TODO: tmthemes.com is down while i'm trying to write this
+# curl -O http://tmthemes.com/    [ Argonaut ].tmTheme
+# mv [ Argonaut ].tmTheme ~/Library/Application\ Support/TextMate/Themes/
+
+
+# cleanup
+
+cd /tmp
+rm -rf textmate
