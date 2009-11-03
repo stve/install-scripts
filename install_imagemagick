@@ -1,0 +1,5 @@
+cd ~/src
+
+curl -O http://github.com/maddox/magick-installer/raw/master/magick-installer.sh
+chmod a+x magick-installer.sh
+./magick-installer.sh
