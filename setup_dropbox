@@ -1,0 +1,14 @@
+# Things
+ln -s -i ~/Dropbox/Library/Cultured\ Code ~/Library/Application\ Support/Cultured\ Code
+
+# Quicksilver
+ln -s -i ~/Dropbox/Library/Quicksilver ~/Library/Application\ Support/Quicksilver
+
+# Colloquoy
+ln -s -i ~/Dropbox/Library/Colloquy ~/Library/Application\ Support/Colloquy
+
+# Adium
+ln -s -i ~/Dropbox/Library/Adium\ 2.0 ~/Library/Application\ Support/Adium\ 2.0
+
+# Textmate
+ln -s -i ~/Dropbox/Library/Textmate ~/Library/Application\ Support/Textmate
