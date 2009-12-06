@@ -21,5 +21,8 @@ brew install ec2-api-tools
 # graphics
 brew install imagemagick
 
+# gist
+brew install git
+
 echo "Done"
 
