@@ -3,6 +3,7 @@ echo "Installing libs with brew =>"
 # memcached
 brew install libevent
 brew install memcached
+brew install libmemcached
 
 # sqlite
 brew install sqlite
