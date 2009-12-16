@@ -4,16 +4,17 @@ echo "Installing libs with brew =>"
 brew install libevent
 brew install memcached
 
-# databases
+# sqlite
 brew install sqlite
-brew install mysql
-brew install sphinx
 
 # setup mysql to boot on launch
-sudo mkdir -p ~/Library/LaunchAgents
-sudo cp /usr/local/Cellar/mysql/5.1.38/com.mysql.mysqld.plist ~/Library/LaunchAgents
-sudo chown root ~/Library/LaunchAgents/com.mysql.mysqld.plist
-launchctl load -w ~/Library/LaunchAgents/com.mysql.mysqld.plist
+brew install mysql
+mysql_install_db
+mkdir -p ~/Library/LaunchAgents
+cp /usr/local/Cellar/mysql/5.1.41/com.mysql.mysqld.plist ~/Library/LaunchAgents/
+
+# sphinx
+brew install sphinx
 
 # amazon ec2
 brew install ec2-api-tools
@@ -23,6 +24,14 @@ brew install imagemagick
 
 # gist
 brew install git
+
+# mongodb
+brew install mongodb
+mkdir -p /data/db
+
+# redis
+brew install redis
+mkdir -p /var/db/redis
 
 echo "Done"
 
