@@ -1,0 +1,10 @@
+echo "Installing postgres =>"
+
+# Install postgres
+brew install postgres
+
+# first install, create a database
+/usr/local/bin/initdb /usr/local/var/postgres
+
+# install gem
+env ARCHFLAGS="-arch x86_64" gem install postgres
