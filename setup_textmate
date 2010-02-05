@@ -10,9 +10,9 @@ cd /tmp/textmate
 
 # install the Missing Drawer Plugin
 
-curl -O http://textmate-missingdrawer.googlecode.com/files/MissingDrawer_2009-01-27.zip.zip MissingDrawer.zip
+curl http://textmate-missingdrawer.googlecode.com/files/MissingDrawer_2009-01-27.zip.zip > MissingDrawer.zip
 unzip MissingDrawer.zip
-mv MissingDrawer20061108 ~/Library/Application\ Support/TextMate/PlugIns/
+mv MissingDrawer/MissingDrawer.tmplugin ~/Library/Application\ Support/TextMate/PlugIns/
 
 # install the Argonaut theme
 # TODO: tmthemes.com is down while i'm trying to write this, so using my own copy instead
