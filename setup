@@ -1,0 +1,7 @@
+curl -L http://github.com/spagalloco/install-scripts/zipball/master > install-scripts.zip
+
+unzip install-scripts.zip
+
+cd spagalloco-install-scripts-*
+
+./bootstrap

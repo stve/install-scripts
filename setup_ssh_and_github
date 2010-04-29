@@ -1,0 +1,2 @@
+git clone git://github.com/help/setup.git ssh-setup
+./ssh-setup/setup.sh

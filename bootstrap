@@ -3,7 +3,6 @@ echo "Let's get this party started"
 sudo rm -rf /usr/local
 
 # install brew and git
-# ./homebrew_install.rb
 ./install_homebrew
 
 # use brew to install a bunch of libs

@@ -1,3 +1,6 @@
+# This is a wrapper around maddox's imagemagick installer.
+# This is here in case you want to build it manually, but the recommended way is to use homebrew 
+
 cd ~/src
 
 curl -O http://github.com/maddox/magick-installer/raw/master/magick-installer.sh
