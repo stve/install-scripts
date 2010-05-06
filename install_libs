@@ -1,5 +1,9 @@
 echo "Installing libs with brew =>"
 
+# git
+brew install git
+brew install gist
+
 # memcached
 brew install libevent
 brew install memcached
@@ -12,7 +16,7 @@ brew install sqlite
 brew install mysql
 mysql_install_db
 mkdir -p ~/Library/LaunchAgents
-cp /usr/local/Cellar/mysql/5.1.41/com.mysql.mysqld.plist ~/Library/LaunchAgents/
+cp /usr/local/Cellar/mysql/5.1.46/com.mysql.mysqld.plist ~/Library/LaunchAgents/
 
 # sphinx
 brew install sphinx
@@ -22,9 +26,6 @@ brew install ec2-api-tools
 
 # graphics
 brew install imagemagick
-
-# gist
-brew install git
 
 # mongodb
 brew install mongodb

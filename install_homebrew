@@ -1,6 +1,8 @@
-curl -L http://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C /usr/local
+# This is basically just a wrapper around the homebrew install script
+# Homebrew is used to install most dependencies, check install_libs to see what is installed
 
-cd /usr/local
-git init
-git remote add origin git://github.com/mxcl/homebrew.git
-git pull origin master
+curl http://gist.github.com/raw/323731/8c5caaf928311e2a09f23a0a36f5f2c120ea068e/install_homebrew.rb > install_homebrew_official
+
+chmod a+x install_homebrew_official
+
+./install_homebrew_official

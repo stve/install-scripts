@@ -1,0 +1,9 @@
+curl -O http://sphinxsearch.com/downloads/sphinx-0.9.8.1.tar.gz
+
+tar zxvf sphinx-0.9.8.1.tar.gz
+cd sphinx-0.9.8.1
+./configure
+make
+make install
+
+# sudo gem install chronic
