@@ -5,8 +5,9 @@ cd /tmp/textmate
 
 # setup TextMate dirs
 
-# mkdir -p ~/Library/Application Support/TextMate/Themess/
+# mkdir -p ~/Library/Application Support/TextMate/Themes/
 # mkdir -p ~/Library/Application Support/TextMate/PlugIns/
+# mkdir -p ~/Library/Applicaiton Support/TextMate/Bundles/
 
 # install the Missing Drawer Plugin
 
@@ -20,10 +21,17 @@ mv MissingDrawer/MissingDrawer.tmplugin ~/Library/Application\ Support/TextMate/
 curl -O http://github.com/spagalloco/install-scripts/raw/master/Argonaut.tmTheme
 mv Argonaut.tmTheme ~/Library/Application\ Support/TextMate/Themes/
 
-# install Ack Bundle
+# install Bundles
 mkdir -p ~/Library/Application\ Support/TextMate/Bundles
 cd ~/Library/Application\ Support/TextMate/Bundles
+
 git clone git://github.com/protocool/ack-tmbundle.git Ack.tmbundle
+git clone git://github.com/shaliko/shoulda-tmbundle.git Shoulda.tmbundle
+git clone git://github.com/kswedberg/jquery-tmbundle.git "JavaScript jQuery.tmbundle"
+git clone git://github.com/aslakhellesoy/cucumber-tmbundle.git Cucumber.tmbundle
+git clone git://github.com/bmabey/webrat-tmbundle.git Webrat.tmbundle
+
+osascript -e 'tell app "TextMate" to reload bundles'
 
 # cleanup
 
