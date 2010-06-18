@@ -31,6 +31,7 @@ git clone git://github.com/kswedberg/jquery-tmbundle.git "JavaScript jQuery.tmbu
 git clone git://github.com/aslakhellesoy/cucumber-tmbundle.git Cucumber.tmbundle
 git clone git://github.com/bmabey/webrat-tmbundle.git Webrat.tmbundle
 git clone git://github.com/mocoso/code-beautifier.tmbundle.git "Code Beautifier.tmbundle"
+git clone git://github.com/dchelimsky/rspec-tmbundle.git RSpec.tmbundle
 
 osascript -e 'tell app "TextMate" to reload bundles'
 
