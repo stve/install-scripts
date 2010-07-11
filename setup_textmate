@@ -36,6 +36,8 @@ git clone git://github.com/aslakhellesoy/cucumber-tmbundle.git Cucumber.tmbundle
 git clone git://github.com/bmabey/webrat-tmbundle.git Webrat.tmbundle
 git clone git://github.com/mocoso/code-beautifier.tmbundle.git "Code Beautifier.tmbundle"
 git clone git://github.com/dchelimsky/rspec-tmbundle.git RSpec.tmbundle
+git clone git://github.com/fredoliveira/textmate-960gs.git 960gs.tmbundle
+git clone git://github.com/drnic/Bundler.tmbundle.git
 
 osascript -e 'tell app "TextMate" to reload bundles'
 
