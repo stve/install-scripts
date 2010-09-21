@@ -40,6 +40,8 @@ git clone git://github.com/fredoliveira/textmate-960gs.git 960gs.tmbundle
 git clone git://github.com/drnic/Bundler.tmbundle.git
 git clone git://github.com/lsegal/yard-tmbundle.git Yard.tmbundle
 git clone git://github.com/vigetlabs/whitespace-tmbundle.git Whitespace.tmbundle
+git clone git://github.com/defunkt/Mustache.tmbundle.git mustache_bundle && cp -R mustache_bundle/Mustache.tmbundle . && rm -rf mustache_bundle
+
 
 osascript -e 'tell app "TextMate" to reload bundles'
 
